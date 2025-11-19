@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora básica</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main class="page">
+        <h1>Calculadora básica</h1>
+
+        <section class="calculator">
+            <!-- Pantalla -->
+            <div class="calc-screen">
+                <div id="operation" class="calc-operation"></div>
+                <div id="display" class="calc-display">0</div>
+            </div>
+
+            <!-- Botones -->
+            <div class="calc-buttons">
+                <!-- Fila 1 -->
+                <button class="btn btn-secondary" data-action="clear">C</button>
+                <button class="btn btn-operator" data-operator="/">÷</button>
+                <button class="btn btn-operator" data-operator="*">×</button>
+                <button class="btn btn-operator" data-operator="-">−</button>
+
+                <!-- Fila 2 -->
+                <button class="btn btn-number" data-number="7">7</button>
+                <button class="btn btn-number" data-number="8">8</button>
+                <button class="btn btn-number" data-number="9">9</button>
+                <button class="btn btn-operator" data-operator="+">+</button>
+
+                <!-- Fila 3 -->
+                <button class="btn btn-number" data-number="4">4</button>
+                <button class="btn btn-number" data-number="5">5</button>
+                <button class="btn btn-number" data-number="6">6</button>
+                <button class="btn btn-equal" data-action="equal">=</button>
+
+                <!-- Fila 4 -->
+                <button class="btn btn-number" data-number="1">1</button>
+                <button class="btn btn-number" data-number="2">2</button>
+                <button class="btn btn-number" data-number="3">3</button>
+                <button class="btn btn-number" data-number=".">.</button>
+
+                <!-- Fila 5 -->
+                <button class="btn btn-zero btn-number" data-number="0">0</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
